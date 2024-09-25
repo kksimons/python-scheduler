@@ -5,7 +5,7 @@ If you pull down the repo you will need to do a `pip install -r requirements.txt
 `docker pull kksimons/scheduler:latest`
 
 This means you've got to post to port 80
-`docker run -p 80:5000 kksimons/scheduler`
+`docker run -p 80:5000 kksimons/scheduler:latest`
 
 ## Run the Streamlit
 
