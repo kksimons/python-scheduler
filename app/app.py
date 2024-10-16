@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from scripts.scheduler import create_shift_scheduling_model, solve_shift_scheduling
 import uvicorn
