@@ -3,10 +3,7 @@ services:
     build:
       context: .
     ports:
-      - ":5000"
-    
-    volumes:
-      # - ./.aws:/root/.aws:ro
+      - "5000:5000"  # FastAPI exposed on port 5000
 
   nginx:
     build: 
@@ -17,4 +14,4 @@ services:
       - app
 
     ports:
-      - "80:80"
+      - "80:80"  # Nginx exposed on port 80
